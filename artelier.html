@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>OTAKEI PORTFOLIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="keywords" content="ポートフォリオ, KEI OTA, デザイナー, 情報デザイン, デザイン, UIデザイナー, UXデザイナー, illustrator">
+    <meta name="description" content="KEI OTA PORTFOLIO">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-scrollify@1/jquery.scrollify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script src="js/swiper_main.js"></script>
+    <link rel="shortcut icon" href="img/logo.png">
+</head>
+
+<body>
+    <header>
+        <div class="menu_sw_bk menu_sw_settings"></div>
+        <div id="nav-drawer">
+            <input id="nav-input" type="checkbox" class="nav-unshown">
+            <label id="nav-open" for="nav-input"><span></span></label>
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <div id="nav-content">
+                <ul>
+                    <li><a href="index.html#top">TOP</a></li>
+                    <li><a href="index.html#profile">PROFILE</a></li>
+                    <li><a href="index.html#works">WORKS</a></li>
+                    <li><a href="index.html#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="content main" id="main">
+            <img src="img/works/artelier.jpg" width="100%">
+        </div>
+
+        <div class="content profile" id="profile">
+            <h1>PROFILE</h1>
+        </div>
+
+        <div class="content profile2" id="profile2">
+            <h1>　</h1>
+        </div>
+
+        <div class="content works" id="works">
+            <h1>WORKS</h1>
+        </div>
+
+        <div class="content contact" id="contact">
+            <h1>CONTACT</h1>
+        </div>
+    </main>
+    <div id="page_top">
+        <a href="#">
+            <div class="arrow"></div>
+        </a>
+    </div>
+    <footer>
+    </footer>
+    <script>
+        $(function() {
+            var topBtn = $('#page_top');
+            topBtn.hide();
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 1) {
+                    topBtn.fadeIn();
+                } else {
+                    topBtn.fadeOut();
+                }
+            });
+            topBtn.click(function() {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 500);
+                return false;
+            });
+        });
+
+    </script>
+
+    <script>
+        var current;
+        $.scrollify({
+            section: ".content",
+            easing: "swing",
+            before: function(i, box) {
+                current = i
+                $('.pagenation .active').removeClass('active');
+                $('.pagenation').find('a').eq(i).addClass('active');
+            },
+            afterRender: function() {
+                var pagenation = '<ul class="pagenation">';
+                $('.content').each(function(i) {
+                    pagenation += '<li><a></a></li>';
+                });
+                pagenation += '</ul>';
+                $('body').append(pagenation);
+                $('.pagenation a').each(function(i) {
+                    $(this).on('click', function() {
+                        $.scrollify.move(i);
+                    });
+                });
+                $('.pagenation li:first-child').find('a').addClass('active');
+            },
+        });
+        $(window).on('resize', function() {
+            if (current) {
+                var currentScrl = $('.content').eq(current).offset().top;
+                $(window).scrollTop(currentScrl);
+            }
+        });
+
+    </script>
+    <script>
+        $(function() {
+            var topBtn = $('#topBtn');
+            topBtn.click(function() {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 500);
+                return false;
+            });
+        });
+        *
+
+    </script>
+
+    <script>
+        $('#topBtn').click(function() {
+            $('html, body').animate({
+                scrollTop: 0
+            });
+        });
+
+    </script>
+
+    <script>
+        $('#profBtn').click(function() {
+            var btn = $('#profile').offset().top;
+            $('html, body').animate({
+                scrollTop: btn
+            });
+        });
+
+    </script>
+
+    <script>
+        $('#worksBtn').click(function() {
+            var btn = $('#works').offset().top;
+            $('html, body').animate({
+                scrollTop: btn
+            });
+        });
+
+    </script>
+
+    <script>
+        $('#contBtn').click(function() {
+            var btn = $('#contact').offset().top;
+            $('html, body').animate({
+                scrollTop: btn
+            });
+        });
+
+    </script>
+
+    <script>
+        $('#topNext').click(function() {
+            var btn = $('#profile').offset().top;
+            $('html, body').animate({
+                scrollTop: btn
+            }, 1000);
+        });
+
+    </script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true,
+            },
+        });
+
+    </script>
+
+</body>
+
+</html>
