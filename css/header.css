@@ -1,3 +1,13 @@
+@font-face {
+    font-family: '源真ゴシック';
+    src: url('../fonts/GenShinGothic-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Arial Black';
+    src: url('../fonts/Arial-Black-Italic.ttf') format('truetype');
+}
+
 .menu_sw_bk {
     display: block;
     position: static;
@@ -20,7 +30,7 @@
 /*ヘッダーまわりはサイトに合わせて調整してください*/
 header {
     position: fixed;
-    margin-top: -25.5%;
+    margin-top: -0.5%;
 }
 
 #nav-drawer {

@@ -20,7 +20,7 @@
 
 <body>
     <header>
-        <div class="menu_sw_bk menu_sw_settings"></div>
+        <div class="menu_sw_bk menu_sw_settings" id="menuBtn"></div>
         <div id="nav-drawer">
             <input id="nav-input" type="checkbox" class="nav-unshown">
             <label id="nav-open" for="nav-input"><span></span></label>
@@ -38,8 +38,10 @@
 
     <main>
         <div class="content top" id="top">
-            <a>OTA KEI PORTFOLIO</a>
-            <div class="arrow2" id="topNext"><img src="img/down.svg"></div>
+            <div class="top_box">
+                <a>OTA KEI PORTFOLIO</a>
+                <div class="arrow2" id="topNext"><img src="img/down.svg"></div>
+            </div>
         </div>
 
         <div class="content profile" id="profile">
@@ -158,6 +160,20 @@
                     scrollTop: 0
                 }, 500);
                 return false;
+            });
+        });
+
+    </script>
+    <script>
+        $(function() {
+            var menuBtn = $('#menuBtn');
+            menuBtn.hide();
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 1) {
+                    menuBtn.fadeIn();
+                } else {
+                    menuBtn.fadeOut();
+                }
             });
         });
 

@@ -4,13 +4,17 @@ body {
 }
 
 .top {
-    margin: 25% 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top a {
     font-family: Arial Black;
     font-style: italic;
     font-size: 72px;
     color: #fff;
     color: rgb(255, 255, 255);
-    text-align: center;
 }
 
 #page_top {
@@ -150,7 +154,7 @@ body {
 }
 
 .prof_txt rb {
-    font-family: 源真ゴシックP;
+    font-family: 源真ゴシック;
     font-weight: 800;
     font-size: 60px;
     letter-spacing: 7.1px;
@@ -341,13 +345,6 @@ textarea:focus {
     /* 不透明 */
 }
 
-
 .main {
     background: #fff;
-}
-
-.main img {
-    position: relative;
-    top: 20%;
-    bottom: 20%;
 }

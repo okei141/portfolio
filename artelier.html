@@ -20,17 +20,17 @@
 
 <body>
     <header>
-        <div class="menu_sw_bk menu_sw_settings"></div>
+        <div class="menu_sw_bk menu_sw_settings" id="menuBtn"></div>
         <div id="nav-drawer">
             <input id="nav-input" type="checkbox" class="nav-unshown">
             <label id="nav-open" for="nav-input"><span></span></label>
             <label class="nav-unshown" id="nav-close" for="nav-input"></label>
             <div id="nav-content">
                 <ul>
-                    <li><a href="index.html#top">TOP</a></li>
-                    <li><a href="index.html#profile">PROFILE</a></li>
-                    <li><a href="index.html#works">WORKS</a></li>
-                    <li><a href="index.html#contact">CONTACT</a></li>
+                    <li><a id="topBtn">TOP</a></li>
+                    <li><a id="profBtn">PROFILE</a></li>
+                    <li><a id="worksBtn">WORKS</a></li>
+                    <li><a id="contBtn">CONTACT</a></li>
                 </ul>
             </div>
         </div>
@@ -39,6 +39,7 @@
     <main>
         <div class="content main" id="main">
             <img src="img/works/artelier.jpg" width="100%">
+            <div class="arrow2" id="topNext"><img src="img/down_b.svg"></div>
         </div>
 
         <div class="content profile" id="profile">
@@ -80,6 +81,21 @@
                     scrollTop: 0
                 }, 500);
                 return false;
+            });
+        });
+
+    </script>
+
+    <script>
+        $(function() {
+            var menuBtn = $('#menuBtn');
+            menuBtn.hide();
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 1) {
+                    menuBtn.fadeIn();
+                } else {
+                    menuBtn.fadeOut();
+                }
             });
         });
 
