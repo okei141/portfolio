@@ -15,7 +15,7 @@
     width: 6.5rem;
     height: 9.5rem;
     background: #000;
-    transform: rotate(9deg) skew(calc((90deg - 108deg) / 2), calc((90deg - 108deg) / 2));
+    transform: rotate(8deg) skew(calc((90deg - 105deg) / 2), calc((90deg - 105deg) / 2));
     /* calc((90deg - 欲しい角度) / 2) */
 }
 
@@ -50,20 +50,6 @@ header {
     width: 30px;
     height: 22px;
     vertical-align: middle;
-}
-
-#nav-open span,
-#nav-open span:before,
-#nav-open span:after {
-    position: absolute;
-    height: 4px;
-    /*線の太さ*/
-    width: 32px;
-    /*長さ*/
-    background: #fff;
-    display: block;
-    content: '';
-    cursor: pointer;
 }
 
 #nav-open span:hover {
@@ -116,7 +102,7 @@ header {
     transition: .3s ease-in-out;
     /*滑らかに表示*/
     -webkit-transform: translateX(-105%);
-    transform: translateX(-500%) rotate(9deg) skew(calc((90deg - 108deg) / 2), calc((90deg - 108deg) / 2));
+    transform: translateX(-500%) rotate(8deg) skew(calc((90deg - 105deg) / 2), calc((90deg - 105deg) / 2));
     /*左に隠しておく*/
 }
 
@@ -129,7 +115,7 @@ header {
 
 #nav-input:checked ~ #nav-content {
     -webkit-transform: translateX(0%);
-    transform: translateX(-40%) rotate(9deg) skew(calc((90deg - 108deg) / 2), calc((90deg - 108deg) / 2));
+    transform: translateX(-40%) rotate(8deg) skew(calc((90deg - 105deg) / 2), calc((90deg - 105deg) / 2));
     /*中身を表示（右へスライド）*/
     box-shadow: 6px 0 25px rgba(0, 0, 0, .15);
 }
@@ -138,7 +124,6 @@ header {
     margin: 200px 0 0 40%;
     list-style: none;
     font-family: Arial Black;
-    font-style: italic;
     font-size: 36px;
     color: #FFFFFF;
     color: rgb(255, 255, 255);
@@ -156,5 +141,19 @@ header {
 #nav-content ul li a:hover {
     transition: all 0.2s ease;
     opacity: 0.5;
+    cursor: pointer;
+}
+
+#nav-open span,
+#nav-open span:before,
+#nav-open span:after {
+    position: absolute;
+    height: 5px;
+    /*線の太さ*/
+    width: 32px;
+    /*長さ*/
+    background: #fff;
+    display: block;
+    content: '';
     cursor: pointer;
 }

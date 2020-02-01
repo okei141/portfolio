@@ -11,7 +11,6 @@ body {
 
 .top a {
     font-family: Arial Black;
-    font-style: italic;
     font-size: 72px;
     color: #fff;
     color: rgb(255, 255, 255);
@@ -27,7 +26,7 @@ body {
     width: 6.5rem;
     height: 9.5rem;
     background: #000;
-    transform: rotate(9deg) skew(calc((90deg - 108deg) / 2), calc((90deg - 108deg) / 2));
+    transform: rotate(8deg) skew(calc((90deg - 105deg) / 2), calc((90deg - 105deg) / 2));
 }
 
 .arrow {
@@ -102,7 +101,6 @@ body {
 .content h1 {
     padding: 2.2rem 0 0 12rem;
     font-family: Arial Black;
-    font-style: italic;
     font-size: 72px;
     color: #000000;
     color: rgb(0, 0, 0);
@@ -183,14 +181,12 @@ body {
 
 .flexbox2 h3 {
     font-family: Arial Black;
-    font-style: italic;
     font-size: 48px;
     margin: -100px 0 20px 0;
 }
 
 .flexbox2 h4 {
     font-family: Arial Black;
-    font-style: italic;
     font-size: 21px;
     letter-spacing: 1.2px;
     margin-bottom: 0;
@@ -254,7 +250,6 @@ textarea:focus {
     padding: 15px 50px;
     margin: -0 35%;
     font-family: Arial Black;
-    font-style: italic;
     font-size: 20px;
     background: #fff;
     color: #000;
@@ -343,6 +338,14 @@ textarea:focus {
     /* 色：黄色 */
     opacity: 1;
     /* 不透明 */
+}
+
+.browser {
+    position: absolute;
+    width: 565px;
+    margin: 200px auto;
+    font-family: 源真ゴシック;
+    color: #fff;
 }
 
 .main {
