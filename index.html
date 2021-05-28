@@ -19,6 +19,24 @@
 </head>
 
 <body>
+    <div id="loader">
+        <div class="sk-fading-circle">
+            <div class="sk-circle1 sk-circle"></div>
+            <div class="sk-circle2 sk-circle"></div>
+            <div class="sk-circle3 sk-circle"></div>
+            <div class="sk-circle4 sk-circle"></div>
+            <div class="sk-circle5 sk-circle"></div>
+            <div class="sk-circle6 sk-circle"></div>
+            <div class="sk-circle7 sk-circle"></div>
+            <div class="sk-circle8 sk-circle"></div>
+            <div class="sk-circle9 sk-circle"></div>
+            <div class="sk-circle10 sk-circle"></div>
+            <div class="sk-circle11 sk-circle"></div>
+            <div class="sk-circle12 sk-circle"></div>
+        </div>
+    </div>
+
+    <div id="wrap">
     <header>
         <div class="menu_sw_bk menu_sw_settings" id="menuBtn"></div>
         <div id="nav-drawer">
@@ -28,8 +46,8 @@
             <div id="nav-content">
                 <ul>
                     <li><a id="topBtn">TOP</a></li>
-                    <li><a id="profBtn">PROFILE</a></li>
                     <li><a id="worksBtn">WORKS</a></li>
+                    <li><a id="profBtn">PROFILE</a></li>
                     <li><a id="contBtn">CONTACT</a></li>
                 </ul>
             </div>
@@ -43,56 +61,6 @@
                 <div class="arrow2" id="topNext"><img src="img/down.svg"></div>
             </div>
             <div class="browser">
-                <p>※Chrome以外のブラウザではレイアウトが崩れる可能性があります</p>
-            </div>
-        </div>
-
-        <div class="content profile" id="profile">
-            <h1>PROFILE</h1>
-            <div class="prof_content">
-                <div class="flexbox">
-                    <div class="flexboxitem1">
-                        <p><img src="img/prof.png"></p>
-                    </div>
-                    <div class="flexboxitem2">
-                        <div class="prof_txt">
-                            <h2><ruby>
-                                    <rb>太田</rb>&ensp;
-                                    <rt>OTA</rt>
-                                    <rb>圭</rb>
-                                    <rt>KEI</rt>
-                                </ruby></h2>
-                            <ul>
-                                <li>公立はこだて未来大学</li>
-                                <li>情報アーキテクチャ学科</li>
-                                <li>情報デザインコース3年在学</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="content profile2" id="profile2">
-            <h1>　</h1>
-            <div class="prof_content2">
-                <div class="flexbox2">
-                    <div class="flexbox2item1 flexbox2setting">
-                        <h3>ABOUT ME</h3>
-                        <p>私は現在、情報デザインやデザインのプロセス・表現方法について学んでいます。趣味はPCを自作したり車の運転・整備をしたり時々動画を作ったりすることです。これまでに組んだPCは8台。サークルは自動車部に所属し2年次に部長を務めていました。なんでも楽しんでデザインするというスタンスで制作活動をしています。</p>
-                    </div>
-                    <div class="flexbox2item2 flexbox2setting">
-                        <h3>SKILLS / LEARNING</h3>
-                        <h4>DESIGN:</h4>
-                        <p>UI・UX / Webデザイン / 認知心理学 / フィールド調査 /グラフィックデザイン / 映像制作 / 写真撮影 / 動画撮影/ 3Dモデリング / プロダクトデザイン / 電子工作 / 木工・DIY</p>
-                        <h4>TOOLS</h4>
-                        <p>Illustrator / Photoshop / Lightroom / Premiere Pro / After Effects / AviUtl / Blender / Unity / Processing / Arduino / HTML5 / CSS4 / Word / Excel / PowerPoint </p>
-                    </div>
-                    <div class="flexbox2item3 flexbox2setting">
-                        <h3>INTEREST</h3>
-                        <p>イラスト制作 / VR・xR / トラック(Track)制作 / コラージュアート / コンテンツプランナー</p>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -119,6 +87,57 @@
             </div>
         </div>
 
+        <div class="content profile" id="profile">
+            <h1>PROFILE</h1>
+            <div class="prof_content">
+                <div class="flexbox">
+                    <div class="flexboxitem1">
+                        <p>
+                            <img src="img/prof.png">
+                            <img src="img/profmain.png">
+                        </p>
+                    </div>
+                    <div class="flexboxitem2">
+                        <div class="prof_txt">
+                            <h2><ruby>
+                                    <rb>太田</rb>&ensp;
+                                    <rt>OTA</rt>
+                                    <rb>圭</rb>
+                                    <rt>KEI</rt>
+                                </ruby></h2>
+                            <ul>
+                                <li>公立はこだて未来大学 大学院</li>
+                                <li>システム情報科学研究科</li>
+                                <li>メディアデザイン領域1年</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content profile2" id="profile2">
+            <h1>　</h1>
+            <div class="prof_content2">
+                <div class="flexbox2">
+                    <div class="flexbox2item1 flexbox2setting">
+                        <h3>ABOUT ME</h3>
+                        <p>なんでも楽しんでデザインするというスタンスで制作活動をしています。</p>
+                    </div>
+                    <div class="flexbox2item2 flexbox2setting">
+                        <h3>SKILLS / LEARNING</h3>
+                        <h4>DESIGN:</h4>
+                        <p>UI・UX / Webデザイン / 認知心理学 / フィールド調査 /グラフィックデザイン / 映像制作 / 3Dモデリング / プロダクトデザイン / 電子工作 / 木工・DIY</p>
+                        <h4>TOOLS</h4>
+                        <p>Illustrator / Photoshop / Lightroom / Premiere Pro / After Effects / AviUtl / Blender / Unity / VRoid Studio / Processing / Arduino / HTML5 / CSS4 / Word / Excel / PowerPoint </p>
+                    </div>
+                    <div class="flexbox2item3 flexbox2setting">
+                        <h3>INTEREST</h3>
+                        <p>VR・XR / DTM / イラスト制作 / アート制作</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="content contact" id="contact">
             <h1>CONTACT</h1>
             <div class="form_content">
@@ -147,7 +166,34 @@
     </div>
     <footer>
     </footer>
+</div>
     <script>
+        $(function() {
+  var winH = $(window).height();
+  $('#wrap').css('display','none');
+  $('#loader').height(winH).css('display','block');
+});
+
+function stopload() {
+  $('#wrap').css('display','block');
+  $('#loader').delay(600).fadeOut(500);
+}
+
+//読み込み完了で実行
+$(window).on('load', function() {
+  stopload();
+});
+  
+//10秒経過でロード画面強制非表示
+$(function(){
+  setTimeout('stopload()',10000);
+});
+
+        window.onload = ()=>{
+             const loader = document.getElementById('loader');
+             loader.classList.add('loaded');
+            }
+
         $(function() {
             var topBtn = $('#page_top');
             topBtn.hide();
@@ -166,8 +212,24 @@
             });
         });
 
-    </script>
-    <script>
+        $(function() {
+            var topBtn = $('.pagenation');
+            topBtn.hide();
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 1) {
+                    topBtn.fadeIn();
+                } else {
+                    topBtn.fadeOut();
+                }
+            });
+            topBtn.click(function() {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 500);
+                return false;
+            });
+        });
+
         $(function() {
             var menuBtn = $('#menuBtn');
             menuBtn.hide();
@@ -180,9 +242,6 @@
             });
         });
 
-    </script>
-
-    <script>
         var current;
         $.scrollify({
             section: ".content",
@@ -214,8 +273,6 @@
             }
         });
 
-    </script>
-    <script>
         $(function() {
             var topBtn = $('#topBtn');
             topBtn.click(function() {
@@ -225,20 +282,13 @@
                 return false;
             });
         });
-        *
 
-    </script>
-
-    <script>
         $('#topBtn').click(function() {
             $('html, body').animate({
                 scrollTop: 0
             });
         });
 
-    </script>
-
-    <script>
         $('#profBtn').click(function() {
             var btn = $('#profile').offset().top;
             $('html, body').animate({
@@ -246,9 +296,6 @@
             });
         });
 
-    </script>
-
-    <script>
         $('#worksBtn').click(function() {
             var btn = $('#works').offset().top;
             $('html, body').animate({
@@ -256,9 +303,6 @@
             });
         });
 
-    </script>
-
-    <script>
         $('#contBtn').click(function() {
             var btn = $('#contact').offset().top;
             $('html, body').animate({
@@ -266,19 +310,13 @@
             });
         });
 
-    </script>
-
-    <script>
         $('#topNext').click(function() {
-            var btn = $('#profile').offset().top;
+            var btn = $('#works').offset().top;
             $('html, body').animate({
                 scrollTop: btn
             }, 1000);
         });
 
-    </script>
-
-    <script>
         var swiper = new Swiper('.swiper-container', {
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -291,9 +329,7 @@
                 clickable: true,
             },
         });
-
     </script>
-
 </body>
 
 </html>

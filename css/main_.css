@@ -1,0 +1,353 @@
+body {
+    background: url(../img/top.jpg) center center / cover no-repeat fixed;
+    letter-spacing: 0.1em;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top a {
+    font-family: Arial Black;
+    font-size: 72px;
+    color: #fff;
+    color: rgb(255, 255, 255);
+}
+
+#page_top {
+    margin-bottom: -1%;
+    position: fixed;
+    right: 30px;
+    bottom: 0;
+    background: #000;
+    display: block;
+    width: 6.5rem;
+    height: 9.5rem;
+    background: #000;
+    transform: rotate(8deg) skew(calc((90deg - 105deg) / 2), calc((90deg - 105deg) / 2));
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+    border: 5px solid;
+    border-color: transparent transparent #fff #fff;
+    transform: rotate(135deg);
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.arrow:hover {
+    transition: all 0.2s ease;
+    opacity: 0.5;
+}
+
+.arrow2 {
+    position: absolute;
+    text-align: center;
+    width: 200px;
+}
+
+.arrow2 :hover {
+
+    transition: all 0.2s ease;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#topNext {
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.pagenation {
+    z-index: 0;
+    padding-right: 20px;
+    position: fixed;
+    right: 0;
+    top: 50%;
+}
+
+.pagenation li {
+    z-index: 0;
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.pagenation a {
+    z-index: 0;
+    display: block;
+    height: 10px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 10px;
+}
+
+.pagenation a.active {
+    z-index: 0;
+    background: #000;
+}
+
+.content {}
+
+.content h1 {
+    padding: 2.2rem 0 0 12rem;
+    font-family: Arial Black;
+    font-size: 72px;
+    color: #000000;
+    color: rgb(0, 0, 0);
+}
+
+.profile {
+    background: #fff;
+}
+
+.profile2 {
+    background: #fff;
+}
+
+.works {
+    background: #fff;
+}
+
+.contact {
+    background: #fff;
+}
+
+.prof_content {
+    width: 800px;
+    height: 300px;
+    margin: 12.5% auto;
+}
+
+.flexboxitem1 img {
+    width: 400px;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexboxitem1 {
+    width: 400px;
+}
+
+.flexboxitem2 {
+    width: 400px;
+    text-align: center;
+}
+
+.prof_txt h2 {
+    margin-left: 50px;
+}
+
+.prof_txt rb {
+    font-family: 源真ゴシック;
+    font-weight: 800;
+    font-size: 60px;
+    letter-spacing: 7.1px;
+}
+
+.prof_txt rt {
+    font-family: Arial;
+    letter-spacing: 7.1px;
+}
+
+.prof_txt ul li {
+    list-style: none;
+    font-family: 源真ゴシック;
+    font-size: 21px;
+    line-height: 32px;
+    letter-spacing: 2.1px;
+}
+
+.prof_content2 {
+    width: 55%;
+    height: 80%;
+    margin: 8% auto;
+}
+
+.flexbox2 {}
+
+.flexbox2 h3 {
+    font-family: Arial Black;
+    font-size: 48px;
+    margin: -100px 0 20px 0;
+}
+
+.flexbox2 h4 {
+    font-family: Arial Black;
+    font-size: 21px;
+    letter-spacing: 1.2px;
+    margin-bottom: 0;
+}
+
+.flexbox2 p {
+    font-family: 源真ゴシック;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    line-height: 28px;
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
+
+.flexbox2setting {
+    margin-bottom: 150px;
+}
+
+.flexbox2item1 {}
+
+.flexbox2item2 {}
+
+.flexbox2item3 {}
+
+.form_content {
+    width: 600px;
+    margin: 0 auto;
+    font-family: 源真ゴシック;
+}
+
+form {
+    margin: 25% auto;
+}
+
+input {
+    box-sizing: border-box;
+    width: 600px;
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid #000;
+}
+
+textarea {
+    box-sizing: border-box;
+    width: 600px;
+    height: 350px;
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid #000;
+}
+
+input:focus,
+textarea:focus {
+    transition: 0.3s;
+    outline: none;
+    box-shadow: 0 0 0px 2px rgba(0, 0, 0, 1);
+}
+
+.submitBtn {
+    width: 200px;
+    padding: 15px 50px;
+    margin: -0 35%;
+    font-family: Arial Black;
+    font-size: 20px;
+    background: #fff;
+    color: #000;
+    border: 3px solid #000;
+}
+
+.submitBtn:hover {
+    transition: all 0.5s ease;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form_message {
+    font-family: 源真ゴシック;
+    font-size: 14px;
+    text-align: center;
+}
+
+.works_content {
+    margin: 0 0 50px;
+}
+
+.works_content img {
+    width: 100%;
+    height: auto;
+}
+
+.works_content .slick-next {
+    right: 20px;
+    z-index: 99;
+}
+
+.works_content .slick-prev {
+    left: 15px;
+    z-index: 100;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    margin: -60px 20px;
+    padding: 10px;
+    background: none;
+}
+
+.swiper-button-prev {
+    width: 20px;
+    height: 20px;
+    border: 5px solid;
+    border-color: transparent #fff #fff transparent;
+    transform: rotate(135deg);
+}
+
+.swiper-button-next {
+    width: 20px;
+    height: 20px;
+    border: 5px solid;
+    border-color: #fff transparent transparent #fff;
+    transform: rotate(135deg);
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    transition: all 0.3s ease;
+    opacity: 0.6;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    /* 幅 */
+    height: 12px;
+    /* 高さ */
+    background: #000;
+    /* 色：緑 */
+    opacity: 0.5;
+    /* 半透明（デフォルトでは0.2） */
+}
+
+/* 現在のスライドのスタイル */
+.swiper-pagination-bullet-active {
+    width: 12px;
+    /* 幅 */
+    height: 12px;
+    /* 高さ */
+    background: #000;
+    /* 色：黄色 */
+    opacity: 1;
+    /* 不透明 */
+}
+
+.browser {
+    position: absolute;
+    width: 565px;
+    margin: 200px auto;
+    font-family: 源真ゴシック;
+    color: #fff;
+}
+
+.main {
+    background: #fff;
+}

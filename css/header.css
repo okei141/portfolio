@@ -27,8 +27,8 @@
     margin-left: auto;
 }
 
-/*ヘッダーまわりはサイトに合わせて調整してください*/
 header {
+    z-index: 1000;
     position: fixed;
     margin-top: -0.5%;
 }

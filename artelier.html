@@ -9,7 +9,6 @@
     <meta name="description" content="KEI OTA PORTFOLIO">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
-    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-scrollify@1/jquery.scrollify.min.js"></script>
@@ -27,10 +26,12 @@
             <label class="nav-unshown" id="nav-close" for="nav-input"></label>
             <div id="nav-content">
                 <ul>
+                    <li><a href="index.html">HOME</a></li>
                     <li><a id="topBtn">TOP</a></li>
-                    <li><a id="profBtn">PROFILE</a></li>
-                    <li><a id="worksBtn">WORKS</a></li>
-                    <li><a id="contBtn">CONTACT</a></li>
+                    <li><a id="orvBtn">OVERVIEW</a></li>
+                    <li><a id="conBtn">CONCEPT</a></li>
+                    <li><a id="strBtn">Story Board</a></li>
+                    <li><a id="mkpBtn">Making Process</a></li>
                 </ul>
             </div>
         </div>
@@ -42,20 +43,20 @@
             <div class="arrow2" id="topNext"><img src="img/down_b.svg"></div>
         </div>
 
-        <div class="content profile" id="profile">
+        <div class="content overview" id="overview">
             <h1>OVERVIEW</h1>
         </div>
 
-        <div class="content profile2" id="profile2">
+        <div class="content concept" id="concept">
             <h1>CONCEPT</h1>
         </div>
 
-        <div class="content works" id="works">
-            <h1>STORY BOARD</h1>
+        <div class="content story" id="story">
+            <h1>Story Board</h1>
         </div>
 
-        <div class="content contact" id="contact">
-            <h1>MAKING PROCESS</h1>
+        <div class="content make" id="make">
+            <h1>Making Process</h1>
         </div>
     </main>
     <div id="page_top">
@@ -134,19 +135,6 @@
         });
 
     </script>
-    <script>
-        $(function() {
-            var topBtn = $('#topBtn');
-            topBtn.click(function() {
-                $('body,html').animate({
-                    scrollTop: 0
-                }, 500);
-                return false;
-            });
-        });
-        *
-
-    </script>
 
     <script>
         $('#topBtn').click(function() {
@@ -154,47 +142,51 @@
                 scrollTop: 0
             });
         });
-
     </script>
 
     <script>
-        $('#profBtn').click(function() {
-            var btn = $('#profile').offset().top;
+        $('#orvBtn').click(function() {
+            var btn = $('#overview').offset().top;
             $('html, body').animate({
                 scrollTop: btn
             });
         });
-
     </script>
 
     <script>
-        $('#worksBtn').click(function() {
-            var btn = $('#works').offset().top;
+        $('#conBtn').click(function() {
+            var btn = $('#concept').offset().top;
             $('html, body').animate({
                 scrollTop: btn
             });
         });
-
     </script>
 
     <script>
-        $('#contBtn').click(function() {
-            var btn = $('#contact').offset().top;
+        $('#strBtn').click(function() {
+            var btn = $('#story').offset().top;
             $('html, body').animate({
                 scrollTop: btn
             });
         });
+    </script>
 
+    <script>
+        $('#mkpBtn').click(function() {
+            var btn = $('#make').offset().top;
+            $('html, body').animate({
+                scrollTop: btn
+            });
+        });
     </script>
 
     <script>
         $('#topNext').click(function() {
-            var btn = $('#profile').offset().top;
+            var btn = $('#overview').offset().top;
             $('html, body').animate({
                 scrollTop: btn
             }, 1000);
         });
-
     </script>
 
     <script>
@@ -210,7 +202,6 @@
                 clickable: true,
             },
         });
-
     </script>
 
 </body>
