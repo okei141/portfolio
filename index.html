@@ -19,24 +19,6 @@
 </head>
 
 <body>
-    <div id="loader">
-        <div class="sk-fading-circle">
-            <div class="sk-circle1 sk-circle"></div>
-            <div class="sk-circle2 sk-circle"></div>
-            <div class="sk-circle3 sk-circle"></div>
-            <div class="sk-circle4 sk-circle"></div>
-            <div class="sk-circle5 sk-circle"></div>
-            <div class="sk-circle6 sk-circle"></div>
-            <div class="sk-circle7 sk-circle"></div>
-            <div class="sk-circle8 sk-circle"></div>
-            <div class="sk-circle9 sk-circle"></div>
-            <div class="sk-circle10 sk-circle"></div>
-            <div class="sk-circle11 sk-circle"></div>
-            <div class="sk-circle12 sk-circle"></div>
-        </div>
-    </div>
-
-    <div id="wrap">
     <header>
         <div class="menu_sw_bk menu_sw_settings" id="menuBtn"></div>
         <div id="nav-drawer">
@@ -166,29 +148,7 @@
     </div>
     <footer>
     </footer>
-</div>
     <script>
-        $(function() {
-  var winH = $(window).height();
-  $('#wrap').css('display','none');
-  $('#loader').height(winH).css('display','block');
-});
-
-function stopload() {
-  $('#wrap').css('display','block');
-  $('#loader').delay(600).fadeOut(500);
-}
-
-//読み込み完了で実行
-$(window).on('load', function() {
-  stopload();
-});
-  
-//10秒経過でロード画面強制非表示
-$(function(){
-  setTimeout('stopload()',10000);
-});
-
         window.onload = ()=>{
              const loader = document.getElementById('loader');
              loader.classList.add('loaded');
