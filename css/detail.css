@@ -1,0 +1,82 @@
+html, body{
+    overflow: hidden;
+  }
+
+.content h1 {
+    margin: 0 0 25px 0;
+    padding: 2.2rem 0 0 12rem;
+    font-family: Arial Black;
+    font-size: 72px;
+    color: #000000;
+    color: rgb(0, 0, 0);
+}
+
+.detail_content {
+    margin: 0 0 50px;
+}
+
+.detail_content img {
+    width: 100%;
+    height: auto;
+}
+
+.detail_content .slick-next {
+    right: 20px;
+    z-index: 99;
+}
+
+.detail_content .slick-prev {
+    left: 15px;
+    z-index: 100;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    margin: -60px 20px;
+    padding: 10px;
+    background: none;
+}
+
+.swiper-button-prev {
+    width: 20px;
+    height: 20px;
+    border: 5px solid;
+    border-color: transparent #fff #fff transparent;
+    transform: rotate(135deg);
+}
+
+.swiper-button-next {
+    width: 20px;
+    height: 20px;
+    border: 5px solid;
+    border-color: #fff transparent transparent #fff;
+    transform: rotate(135deg);
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    transition: all 0.3s ease;
+    opacity: 0.6;
+}
+
+footer {
+    position: absolute;/*←絶対位置*/
+    bottom: 0; /*下に固定*/
+}
+
+.title_bg {
+    margin-left: 20px;
+    width: 450px;
+    height: 8rem;
+    transform: skewX(-16deg);
+	background: #c8c8c8;
+    border-left: solid 5px #000;
+}
+
+.title_bg h2 {
+    position: absolute;
+    margin: 25px 0 0 50px;
+    font-family: Noto Sans JP;
+    font-size: 50px;
+    font-weight: 900;
+}

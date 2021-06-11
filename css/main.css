@@ -98,6 +98,7 @@ body {
 }
 
 .content h1 {
+    margin: 0 0 25px 0;
     padding: 2.2rem 0 0 12rem;
     font-family: Arial Black;
     font-size: 72px;
@@ -202,8 +203,6 @@ body {
     margin: 8% auto;
 }
 
-.flexbox2 {}
-
 .flexbox2 h3 {
     font-family: Arial Black;
     font-size: 48px;
@@ -229,12 +228,6 @@ body {
 .flexbox2setting {
     margin-bottom: 150px;
 }
-
-.flexbox2item1 {}
-
-.flexbox2item2 {}
-
-.flexbox2item3 {}
 
 .form_content {
     width: 600px;
@@ -309,6 +302,25 @@ textarea:focus {
 }
 
 .works_content .slick-prev {
+    left: 15px;
+    z-index: 100;
+}
+
+.detail_content {
+    margin: 0 0 50px;
+}
+
+.detail_content img {
+    width: 100%;
+    height: auto;
+}
+
+.detail_content .slick-next {
+    right: 20px;
+    z-index: 99;
+}
+
+.detail_content .slick-prev {
     left: 15px;
     z-index: 100;
 }

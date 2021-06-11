@@ -17,6 +17,7 @@ body {
 }
 
 #page_top {
+    z-index: 900;
     margin-bottom: -1%;
     position: fixed;
     right: 30px;
@@ -96,8 +97,6 @@ body {
     background: #000;
 }
 
-.content {}
-
 .content h1 {
     padding: 2.2rem 0 0 12rem;
     font-family: Arial Black;
@@ -122,14 +121,40 @@ body {
     background: #fff;
 }
 
+.overview {
+    background: #fff;
+}
+
+.concept {
+    background: #fff;
+}
+
+.story {
+    background: #fff;
+}
+
+.make {
+    background: #fff;
+}
+
 .prof_content {
     width: 800px;
     height: 300px;
     margin: 12.5% auto;
 }
 
+.flexboxitem1 {
+    width: 250px;
+}
+
 .flexboxitem1 img {
-    width: 400px;
+    width: 250px;
+	position: absolute;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	display: block;
+	-webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
 }
 
 .flexbox {
@@ -138,12 +163,12 @@ body {
     align-items: center;
 }
 
-.flexboxitem1 {
-    width: 400px;
+.flexboxitem1:hover img:nth-of-type(2){
+    opacity: 0;
 }
 
 .flexboxitem2 {
-    width: 400px;
+    width: 350px;
     text-align: center;
 }
 
@@ -325,7 +350,6 @@ textarea:focus {
     background: #000;
     /* 色：緑 */
     opacity: 0.5;
-    /* 半透明（デフォルトでは0.2） */
 }
 
 /* 現在のスライドのスタイル */
