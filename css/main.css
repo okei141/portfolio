@@ -1,6 +1,7 @@
 body {
     background: url(../img/top.jpg) center center / cover no-repeat fixed;
     letter-spacing: 0.1em;
+    min-width :1000px;
 }
 
 .top {
@@ -178,7 +179,7 @@ body {
 }
 
 .prof_txt rb {
-    font-family: 源真ゴシック;
+    font-family: Noto Sans JP;
     font-weight: 800;
     font-size: 60px;
     letter-spacing: 7.1px;
@@ -191,7 +192,7 @@ body {
 
 .prof_txt ul li {
     list-style: none;
-    font-family: 源真ゴシック;
+    font-family: Noto Sans JP;
     font-size: 21px;
     line-height: 32px;
     letter-spacing: 2.1px;
@@ -217,7 +218,7 @@ body {
 }
 
 .flexbox2 p {
-    font-family: 源真ゴシック;
+    font-family: Noto Sans JP;
     font-size: 16px;
     letter-spacing: 1.2px;
     line-height: 28px;
@@ -232,7 +233,7 @@ body {
 .form_content {
     width: 600px;
     margin: 0 auto;
-    font-family: 源真ゴシック;
+    font-family: Noto Sans JP;
 }
 
 form {
@@ -282,7 +283,7 @@ textarea:focus {
 }
 
 .form_message {
-    font-family: 源真ゴシック;
+    font-family: Noto Sans JP;
     font-size: 14px;
     text-align: center;
 }
@@ -380,7 +381,7 @@ textarea:focus {
     position: absolute;
     width: 565px;
     margin: 200px auto;
-    font-family: 源真ゴシック;
+    font-family: Noto Sans JP;
     color: #fff;
 }
 

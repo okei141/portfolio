@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>OTAKEI PORTFOLIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="keywords" content="ポートフォリオ, KEI OTA, デザイナー, 情報デザイン, デザイン, UIデザイナー, UXデザイナー, illustrator">
+    <meta name="description" content="KEI OTA PORTFOLIO">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <link rel="stylesheet" href="css/header_works.css">
+    <link rel="stylesheet" href="css/detail.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-scrollify@1/jquery.scrollify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script src="js/swiper_main.js"></script>
+    <link rel="shortcut icon" href="img/logo.png">
+</head>
+
+<body>
+    <header>
+        <div class="menu_sw_bk menu_sw_settings" id="menuBtn"></div>
+        <div id="nav-drawer">
+            <input id="nav-input" type="checkbox" class="nav-unshown">
+            <label id="nav-open" for="nav-input"><span></span></label>
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <div id="nav-content">
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="index.html#2">WORKS</a></li>
+                    <li><a href="index.html#3">PROFILE</a></li>
+                    <li><a href="index.html#4">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="content detail">
+            <h1>WORKS_detail</h1>
+            <div class="detail_content">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/works/artelier/artelier.jpg"></div>
+                        <div class="swiper-slide"><img src="img/works/artelier/0.jpg"></div>
+                        <div class="swiper-slide"><img src="img/works/artelier/1.png"></div>
+                        <div class="swiper-slide"><img src="img/works/artelier/2.png"></div>
+                        <div class="swiper-slide"><img src="img/works/artelier/3.png"></div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="page_top">
+        <a href="#">
+            <div class="arrow"></div>
+        </a>
+    </div>
+    <footer>
+        <div id="title_bg_min">
+            <h2>函館KGカントリークラブ</h2>
+            <p>制作期間：7日間・新Webサイトの提案</p>
+            <p>個人制作</p>
+        </div>
+        <div id="ex_txt">
+            <p>ヒューマンインタフェース演習という授業の課題で制作したWebサイトである。既存のお客様を大切にしつつ若者を中心に新規層の開拓を狙ったホームページを目指した。そのために、既存の函館KGカントリークラブのサイトで不足しているゴルフ場に関する情報を載せ、ゴルフ場の特徴を活かせる新サービスの提案を行った。UIについては、これまではページごとの関係性が非常に分かりづらくなっていたため、プルダウンメニューを使用し、どのページを見ているのかを把握できるようにした。加えて、マウスオーバー時のボタンのフィードバックを追加したり、各種説明やボタンをアイコン主体にし、初見の人でも安心してページを観覧できるように仕上げた。<a href="https://okei141.github.io/kgcc-web/">公開リンク</a></p>
+        </div>
+    </footer>
+    <script>
+        $(function() {
+            var topBtn = $('#page_top');
+            topBtn.hide();
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 1) {
+                    topBtn.fadeIn();
+                } else {
+                    topBtn.fadeOut();
+                }
+            });
+            topBtn.click(function() {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 500);
+                return false;
+            });
+        });
+    </script>
+
+    <script>
+        var current;
+        $.scrollify({
+            section: ".content",
+            easing: "swing",
+            before: function(i, box) {
+                current = i
+                $('.pagenation .active').removeClass('active');
+                $('.pagenation').find('a').eq(i).addClass('active');
+            },
+            afterRender: function() {
+                var pagenation = '<ul class="pagenation">';
+                $('.content').each(function(i) {
+                    pagenation += '<li><a></a></li>';
+                });
+                pagenation += '</ul>';
+                $('body').append(pagenation);
+                $('.pagenation a').each(function(i) {
+                    $(this).on('click', function() {
+                        $.scrollify.move(i);
+                    });
+                });
+                $('.pagenation li:first-child').find('a').addClass('active');
+            },
+        });
+        $(window).on('resize', function() {
+            if (current) {
+                var currentScrl = $('.content').eq(current).offset().top;
+                $(window).scrollTop(currentScrl);
+            }
+        });
+    </script>
+
+    <script>
+        $('#topBtn').click(function() {
+            $('html, body').animate({
+                scrollTop: 0
+            });
+        });
+    </script>
+
+    <script>
+        $('#orvBtn').click(function() {
+            var btn = $('#overview').offset().top;
+            $('html, body').animate({
+                scrollTop: btn
+            });
+        });
+    </script>
+
+    <script>
+        $('#conBtn').click(function() {
+            var btn = $('#concept').offset().top;
+            $('html, body').animate({
+                scrollTop: btn
+            });
+        });
+    </script>
+
+    <script>
+        $('#strBtn').click(function() {
+            var btn = $('#story').offset().top;
+            $('html, body').animate({
+                scrollTop: btn
+            });
+        });
+    </script>
+
+    <script>
+        $('#mkpBtn').click(function() {
+            var btn = $('#make').offset().top;
+            $('html, body').animate({
+                scrollTop: btn
+            });
+        });
+    </script>
+
+    <script>
+        $('#topNext').click(function() {
+            var btn = $('#overview').offset().top;
+            $('html, body').animate({
+                scrollTop: btn
+            }, 1000);
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+	        slidesPerView: auto,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true,
+            },
+        });
+    </script>
+
+</body>
+
+</html>

@@ -42,15 +42,11 @@
             <div class="detail_content">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><a href=""></a><img src="img/works/artelier.jpg" width="80%"></div>
-                        <div class="swiper-slide"><a href=""><img src="img/works/gym.jpg" width="80%"></a></div>
-                        <div class="swiper-slide"><a href=""><img src="img/works/auto.jpg" width="80%"></a></div>
-                        <div class="swiper-slide"><a href=""><img src="img/works/kgcc.jpg" width="80%"></a></div>
-                        <div class="swiper-slide"><a href=""><img src="img/works/fundesign.jpg" width="80%"></a></div>
-                        <div class="swiper-slide"><a href=""><img src="img/works/withmith.jpg" width="80%"></a></div>
-                        <div class="swiper-slide"><a href=""><img src="img/works/rhp.jpg" width="80%"></a></div>
-                        <div class="swiper-slide"><a href=""><img src="img/works/eshiritori.jpg" width="80%"></a></div>
-                        <div class="swiper-slide"><a href=""><img src="img/works/3d.jpg" width="80%"></a></div>
+                        <div class="swiper-slide"><img src="img/works/artelier/artelier.jpg"></div>
+                        <div class="swiper-slide"><img src="img/works/artelier/0.jpg"></div>
+                        <div class="swiper-slide"><img src="img/works/artelier/1.png"></div>
+                        <div class="swiper-slide"><img src="img/works/artelier/2.png"></div>
+                        <div class="swiper-slide"><img src="img/works/artelier/3.png"></div>
                     </div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
@@ -64,8 +60,13 @@
         </a>
     </div>
     <footer>
-        <div class="title_bg">
+        <div id="title_bg">
             <h2>Artelier</h2>
+            <p>UI・UXデザイン</p>
+            <p>制作期間：2019/8/19～8/25・グループ制作</p>
+        </div>
+        <div id="ex_txt">
+            <p>Artelierは株式会社ソルトワークスのインターンシップのワークショップで提案したスマートフォンアプリ・サービスである。美大生を中心とした作品制作を行う人をターゲットとし、作品の制作過程の記録・管理と観覧をスマートフォンのみで完結できるアプリという想定で企画の立案を行った。このサービスの独自性として完成作品だけではなく没となったものも含めて全てを記録することが出来るという点を設定し、サービスとUIのプロトタイプの制作を行った。</p>
         </div>
     </footer>
     <script>
@@ -176,6 +177,7 @@
 
     <script>
         var swiper = new Swiper('.swiper-container', {
+	        slidesPerView: auto,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',

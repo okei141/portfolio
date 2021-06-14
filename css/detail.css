@@ -1,5 +1,6 @@
 html, body{
     overflow: hidden;
+    min-width :1000px;
   }
 
 .content h1 {
@@ -15,11 +16,6 @@ html, body{
     margin: 0 0 50px;
 }
 
-.detail_content img {
-    width: 100%;
-    height: auto;
-}
-
 .detail_content .slick-next {
     right: 20px;
     z-index: 99;
@@ -28,6 +24,25 @@ html, body{
 .detail_content .slick-prev {
     left: 15px;
     z-index: 100;
+}
+
+.swiper-container {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    padding: -5px 0;
+}
+
+.swiper-slide {
+    text-align: center;
+    line-height: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.swiper-slide img {
+    width: 100%;
 }
 
 .swiper-button-prev,
@@ -59,24 +74,91 @@ html, body{
     opacity: 0.6;
 }
 
-footer {
+#title_bg {
     position: absolute;/*←絶対位置*/
     bottom: 0; /*下に固定*/
-}
-
-.title_bg {
     margin-left: 20px;
     width: 450px;
-    height: 8rem;
+    height: 7.5rem;
     transform: skewX(-16deg);
 	background: #c8c8c8;
     border-left: solid 5px #000;
 }
 
-.title_bg h2 {
-    position: absolute;
-    margin: 25px 0 0 50px;
+#title_bg h2 {
+    margin: 15px 0 0 40px;
     font-family: Noto Sans JP;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 900;
+}
+
+#title_bg p {
+    margin: 5px 0 0 40px;
+    font-family: Noto Sans JP;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+#title_bg_min {
+    position: absolute;/*←絶対位置*/
+    bottom: 0; /*下に固定*/
+    margin-left: 20px;
+    width: 450px;
+    height: 7.5rem;
+    transform: skewX(-16deg);
+	background: #c8c8c8;
+    border-left: solid 5px #000;
+}
+
+#title_bg_min h2 {
+    margin: 20px 0 0 40px;
+    font-family: Noto Sans JP;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+#title_bg_min p {
+    margin: 5px 0 0 40px;
+    font-family: Noto Sans JP;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+#title_bg_umin {
+    position: absolute;/*←絶対位置*/
+    bottom: 0; /*下に固定*/
+    margin-left: 20px;
+    width: 450px;
+    height: 7.5rem;
+    transform: skewX(-16deg);
+	background: #c8c8c8;
+    border-left: solid 5px #000;
+}
+
+#title_bg_umin h2 {
+    margin: 25px 0 0 30px;
+    font-family: Noto Sans JP;
+    font-size: 21px;
+    font-weight: 900;
+}
+
+#title_bg_umin p {
+    margin: 5px 0 0 30px;
+    font-family: Noto Sans JP;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+#ex_txt {
+    width: 100%-500px;
+    height: 8rem;
+    margin: 0 30px 0 520px;
+    bottom: 0;
+    position: fixed;
+}
+
+#ex_txt p {
+    letter-spacing: 0.1em;
+    font-family: Noto Sans JP;
+    line-height: 1.5em
 }
