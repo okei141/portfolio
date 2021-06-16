@@ -11,10 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
     <link rel="stylesheet" href="css/header_works.css">
     <link rel="stylesheet" href="css/detail.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-scrollify@1/jquery.scrollify.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <script src="js/swiper_main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
     <link rel="shortcut icon" href="img/logo.png">
 </head>
 
@@ -42,14 +45,8 @@
             <div class="detail_content">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="img/works/artelier/artelier.jpg"></div>
-                        <div class="swiper-slide"><img src="img/works/artelier/0.jpg"></div>
-                        <div class="swiper-slide"><img src="img/works/artelier/1.png"></div>
-                        <div class="swiper-slide"><img src="img/works/artelier/2.png"></div>
-                        <div class="swiper-slide"><img src="img/works/artelier/3.png"></div>
+                        <div class="swiper-slide"><a href="img/works/tramf/0.jpg" data-lightbox="group"><img src="img/works/tramf/0.jpg"></a></div>
                     </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
                 </div>
             </div>
         </div>
@@ -62,8 +59,8 @@
     <footer>
         <div id="title_bg_min">
             <h2>函館市電新サービス提案</h2>
-            <p>制作期間：2日間・チラシデザイン</p>
-            <p>個人制作</p>
+            <p>チラシデザイン</p>
+            <p>制作期間：2日間・個人制作</p>
         </div>
         <div id="ex_txt">
             <p>本作品は「函館市電 ✕ 三方良し」の新サービス提案を行う授業内で制作した、新サービス紹介をするためのチラシのデザイン案である。このチラシでは、季節ごと特有のイベントの紹介を幅広い観光客へ向けて発信することが想定された。そのため、ぱっと見で季節が伝わり、その季節の良さを連想させるようなデザインを意識して制作を行った。私が担当したのは秋のイベントであったため、オレンジ色のグラデーションと落ち葉をキーとなる内容として設定した。</p>
@@ -175,21 +172,7 @@
         });
     </script>
 
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-	        slidesPerView: auto,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
-                clickable: true,
-            },
-        });
-    </script>
+
 
 </body>
 
