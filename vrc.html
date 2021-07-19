@@ -45,8 +45,12 @@
             <div class="detail_content">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><a href="img/works/tramf/0.jpg" data-lightbox="group"><img src="img/works/tramf/0.jpg"></a></div>
+                        <div class="swiper-slide"><a href="img/works/vrc/0.jpg" data-lightbox="group"><img src="img/works/vrc/0.jpg"></a></div>
+                        <div class="swiper-slide"><a href="img/works/vrc/1.jpg" data-lightbox="group"><img src="img/works/vrc/1.jpg"></a></div>
+                        <div class="swiper-slide"><a href="img/works/vrc/2.jpg" data-lightbox="group"><img src="img/works/vrc/2.jpg"></a></div>
                     </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
         </div>
@@ -57,13 +61,12 @@
         </a>
     </div>
     <footer>
-        <div id="title_bg_min">
-            <h2>函館市電新サービス提案</h2>
-            <p>チラシデザイン</p>
-            <p>制作期間：2日間・個人制作</p>
+        <div id="title_bg_umin">
+            <h2>公立はこだて未来大学木村研究室 in VRChat（仮）</h2>
+            <p>VRChat ワールド制作　個人制作・現在制作中</p>
         </div>
         <div id="ex_txt">
-            <p>本作品は「函館市電 ✕ 三方良し」の新サービス提案を行う授業内で制作した、新サービス紹介をするためのチラシのデザイン案である。このチラシでは、季節ごと特有のイベントの紹介を幅広い観光客へ向けて発信することが想定された。そのため、ぱっと見で季節が伝わり、その季節の良さを連想させるようなデザインを意識して制作を行った。私が担当したのは秋のイベントであったため、オレンジ色のグラデーションと落ち葉をキーとなる内容として設定した。</p>
+            <p>本作品は、公立はこだて未来大学で8/1（日）に行われるオープンキャンパスに出展予定の作品である。VRChat（3D空間上でアバターを介したコミュニケーションが可能なサービス）上で利用できるワールドを想定している。主な使用ツールはBlender（3Dモデリング）、Unity（ワールド制作）である。3Dモデルは一部の小物類を除きすべてBlenderを用いて自らモデリングした。Unityについては、これまでほとんど触ったことが無かったため、学習を進めながら制作を進めている。対面で無くとも、他者と同じ場を共有することで得られる「リアル」を演出できるように日々制作を進めている。</a></p>
         </div>
     </footer>
     <script>
@@ -172,7 +175,21 @@
         });
     </script>
 
-
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+	        slidesPerView: auto,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true,
+            },
+        });
+    </script>
 
 </body>
 
