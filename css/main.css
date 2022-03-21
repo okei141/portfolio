@@ -12,7 +12,7 @@ body {
 
 .top a {
     font-family: Arial Black;
-    font-size: 72px;
+    font-size: 70px;
     color: #fff;
 }
 
@@ -25,16 +25,16 @@ body {
 
 #page_top {
     z-index: 900;
-    margin-bottom: -1%;
     position: fixed;
     right: 30px;
     bottom: 0;
     background: #000;
     display: block;
-    width: 6.5rem;
-    height: 9.5rem;
+    margin-bottom: -0.2%;
+    width: 6rem;
+    height: 7.5rem;
     background: #000;
-    transform: rotate(8deg) skew(calc((90deg - 105deg) / 2), calc((90deg - 105deg) / 2));
+    transform: rotate(8deg) skew(calc((90deg - 106deg) / 2), calc((90deg - 106deg) / 2));
 }
 
 .arrow {
@@ -106,9 +106,9 @@ body {
 
 .content h1 {
     margin: 0 0 20px 0;
-    padding: 2.2rem 0 0 12rem;
+    padding: 1.5rem 0 0 10rem;
     font-family: Arial Black;
-    font-size: 72px;
+    font-size: 70px;
     color: #000000;
     color: rgb(0, 0, 0);
 }

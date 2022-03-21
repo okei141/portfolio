@@ -12,10 +12,10 @@
     display: block;
     position: static;
     z-index: 9999;
-    width: 6.5rem;
-    height: 9.5rem;
+    width: 6rem;
+    height: 7.5rem;
     background: #000;
-    transform: rotate(8deg) skew(calc((90deg - 105deg) / 2), calc((90deg - 105deg) / 2));
+    transform: rotate(8deg) skew(calc((90deg - 106deg) / 2), calc((90deg - 106deg) / 2));
     /* calc((90deg - 欲しい角度) / 2) */
 }
 
